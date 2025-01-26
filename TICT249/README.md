@@ -5,7 +5,7 @@ Instructions
 1. Setup platform IO with vscode
 2. Connect wires in pinout
 
-![image](https://raw.githubusercontent.com/GlennTatum/rit-rovers/refs/heads/main/TICT249/tict249.png)
+![image](https://raw.githubusercontent.com/GlennTatum/rit-rovers/refs/heads/main/TICT249/tic-t249-v2.png)
 
 Resources and Links:
 - https://www.pololu.com/product/3139/resources

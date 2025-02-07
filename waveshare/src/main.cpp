@@ -1,6 +1,8 @@
 #include "Waveshare_10Dof-D.h"
 bool gbSenserConnectState = false;
 
+// TODO Linear Accel xyz Rotational Velocity xyz
+
 void setup() {
   // put your setup code here, to run once:
   bool bRet;
@@ -44,11 +46,11 @@ void loop() {
   Serial.print("    Pitch : "); Serial.print(stAngles.fPitch);
   Serial.print("    Yaw : "); Serial.print(stAngles.fYaw);
   Serial.println();
-  Serial.print("Acceleration: X : "); Serial.print(stAccelRawData.s16X);
+  Serial.print("Acceleration: X : "); Serial.print(stAccelRawData.s16X); // Linear Acceleration
   Serial.print("    Acceleration: Y : "); Serial.print(stAccelRawData.s16Y);
   Serial.print("    Acceleration: Z : "); Serial.print(stAccelRawData.s16Z);
   Serial.println();
-  Serial.print("Gyroscope: X : "); Serial.print(stGyroRawData.s16X);
+  Serial.print("Gyroscope: X : "); Serial.print(stGyroRawData.s16X); // Rotational Velocity
   Serial.print("       Gyroscope: Y : "); Serial.print(stGyroRawData.s16Y);
   Serial.print("       Gyroscope: Z : "); Serial.print(stGyroRawData.s16Z);
   Serial.println();
